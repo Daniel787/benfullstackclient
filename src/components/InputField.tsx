@@ -5,13 +5,12 @@ import {
   Input,
 } from "@chakra-ui/react";
 import { useField } from "formik";
-import _ from "lodash";
-import { formatWithValidation } from "next/dist/shared/lib/utils";
-import React, { HTMLInputTypeAttribute } from "react";
+import React from "react";
 
 type InputFieldProps = React.InputHTMLAttributes<HTMLInputElement> & {
   label: string;
   name: string;
+  textarea?: boolean;
 };
 
 export const InputField: React.FC<InputFieldProps> = ({
